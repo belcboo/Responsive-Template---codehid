@@ -1,0 +1,111 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+
+body {
+  font-family: $ff;
+}
+
+h1 {
+  color: $col_orange1;
+  font-size: 4rem;
+}
+
+i {
+  color: $col_blue;
+  font-size: 3rem;
+}
+
+button {
+  @include border-radius(10px);
+  background-color: $col_orange1;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+header {
+  background-color: $col_blue;
+  height: 80px;
+
+}
+footer{
+  .section1{
+    background-color: $col_orange1;
+  }
+
+  .section2{
+    background-color: $col_orange2;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .grid1 {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-1 {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    div{
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .container-2 {
+    display: flex;
+    text-align: center;
+
+    div {
+      flex: 1;
+      padding: 20px;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  .container-3 {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    .box-5 {
+      flex: 2;
+    }
+    .box-6, .box-7{
+      flex: 1;
+      ul li {
+        list-style-type: none;
+        text-align: left;
+      }
+    }
+  }
+
+  .base{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
