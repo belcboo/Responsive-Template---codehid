@@ -1,14 +1,15 @@
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 h1 {
-  color: #fa8600;
+  color: #ff9800;
   font-size: 4rem;
 }
 
 i {
-  color: #278ce2;
+  color: #29b6f6;
   font-size: 3rem;
 }
 
@@ -16,7 +17,7 @@ button {
   -webkit-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
-  background-color: #fa8600;
+  background-color: #ff9800;
   color: white;
   font-weight: bold;
   width: 150px;
@@ -24,20 +25,321 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  background-color: #29b6f6;
+}
+
 header {
-  background-color: #278ce2;
-  height: 80px;
+  background-color: #29b6f6;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
 footer .section1 {
-  background-color: #fa8600;
+  background-color: #ff9800;
 }
 
 footer .section2 {
-  background-color: #e89254;
+  background-color: #ee8f04;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container .navbar-brand {
+  float: left;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.container nav {
+  float: right;
+}
+
+.container nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  padding-top: 25px;
+  position: relative;
+}
+
+.container nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.container nav ul li a:hover {
+  color: #fff;
+}
+
+.container nav ul li a:before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 0;
+  transition: all ease-in-out 250ms;
+}
+
+.container nav ul li a:hover::before {
+  width: 100%;
+}
+
+.grid1 {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-1 {
+  align-items: center;
+  height: 250px;
+  padding: 20px;
+}
+
+.container-1 div {
+  flex: 1;
+  text-align: center;
+}
+
+.container-1 div h1 {
+  font-size: 3rem;
+}
+
+.container-2 {
+  text-align: center;
+}
+
+.container-2 div {
+  padding: 20px;
+}
+
+.container-2 div p {
+  text-align: left;
+}
+
+.container-3 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.container-3 .box-5 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-3 .box-6,
+.container-3 .box-7 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-3 .box-6 ul,
+.container-3 .box-7 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container-3 .box-6 ul li,
+.container-3 .box-7 ul li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.container-3 .box-6 ul li a,
+.container-3 .box-7 ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.base {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.base a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .container .navbar-brand {
+    float: left;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .container nav {
+    float: right;
+  }
+  .container nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .container nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 25px;
+    position: relative;
+  }
+  .container nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .container nav ul li a:hover {
+    color: #fff;
+  }
+  .container nav ul li a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+  }
+  .container nav ul li a:hover::before {
+    width: 100%;
+  }
+  .grid1 {
+    width: 768px;
+    padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-1 {
+    display: flex;
+    align-items: center;
+    height: 400px;
+  }
+  .container-1 div {
+    flex: 1;
+    text-align: center;
+  }
+  .container-2 {
+    display: flex;
+    text-align: center;
+  }
+  .container-2 div {
+    flex: 1;
+    padding: 20px;
+  }
+  .container-2 div p {
+    text-align: left;
+  }
+  .container-3 {
+    display: flex;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+  .container-3 .box-5 {
+    flex: 2;
+    padding: 10px;
+  }
+  .container-3 .box-6,
+  .container-3 .box-7 {
+    flex: 1;
+  }
+  .container-3 .box-6 ul li,
+  .container-3 .box-7 ul li {
+    list-style-type: none;
+    text-align: left;
+  }
+  .base {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .base a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
 
 @media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .container .navbar-brand {
+    float: left;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .container nav {
+    float: right;
+  }
+  .container nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .container nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 25px;
+    position: relative;
+  }
+  .container nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .container nav ul li a:hover {
+    color: #fff;
+  }
+  .container nav ul li a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+  }
+  .container nav ul li a:hover::before {
+    width: 100%;
+  }
   .grid1 {
     width: 1200px;
     margin-left: auto;
@@ -72,11 +374,14 @@ footer .section2 {
   }
   .container-3 .box-5 {
     flex: 2;
+    padding: 10px;
   }
-  .container-3 .box-6, .container-3 .box-7 {
+  .container-3 .box-6,
+  .container-3 .box-7 {
     flex: 1;
   }
-  .container-3 .box-6 ul li, .container-3 .box-7 ul li {
+  .container-3 .box-6 ul li,
+  .container-3 .box-7 ul li {
     list-style-type: none;
     text-align: left;
   }
