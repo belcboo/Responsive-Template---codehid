@@ -33,7 +33,7 @@ header {
   background-color: #29b6f6;
   position: fixed;
   width: 100%;
-  top: 0px;
+  top: 0;
 }
 
 footer .section1 {
@@ -171,7 +171,6 @@ footer .section2 {
 }
 
 .base {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -188,106 +187,43 @@ footer .section2 {
     width: 768px;
     margin: 0 auto;
   }
-  .container .navbar-brand {
-    float: left;
-    padding: 20px;
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-  }
   .container nav {
     float: right;
   }
-  .container nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
   .container nav ul li {
-    display: inline-block;
     margin-left: 30px;
-    padding-top: 25px;
-    position: relative;
-  }
-  .container nav ul li a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  .container nav ul li a:hover {
-    color: #fff;
-  }
-  .container nav ul li a:before {
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    width: 0;
-    transition: all ease-in-out 250ms;
-  }
-  .container nav ul li a:hover::before {
-    width: 100%;
   }
   .grid1 {
     width: 768px;
-    padding-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 0;
   }
   .container-1 {
     display: flex;
-    align-items: center;
     height: 400px;
-  }
-  .container-1 div {
-    flex: 1;
-    text-align: center;
+    padding: 0px;
   }
   .container-2 {
     display: flex;
-    text-align: center;
   }
   .container-2 div {
     flex: 1;
-    padding: 20px;
-  }
-  .container-2 div p {
-    text-align: left;
   }
   .container-3 {
     display: flex;
     width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .container-3 .box-5 {
     flex: 2;
-    padding: 10px;
+    padding: 20px;
   }
   .container-3 .box-6,
   .container-3 .box-7 {
     flex: 1;
   }
-  .container-3 .box-6 ul li,
-  .container-3 .box-7 ul li {
-    list-style-type: none;
-    text-align: left;
-  }
   .base {
     width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-  }
-  .base a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
   }
 }
 
