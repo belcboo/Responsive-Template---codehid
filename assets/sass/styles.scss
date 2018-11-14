@@ -121,7 +121,6 @@ footer {
   padding: 20px;
 
   div {
-    flex: 1;
     text-align: center;
 
     h1 {
@@ -199,7 +198,6 @@ footer {
 
       ul li {
         margin-left: 30px;
-
       }
     }
   }
@@ -212,7 +210,7 @@ footer {
   .container-1 {
     display: flex;
     height: 400px;
-    padding: 0px;
+    padding: 0;
   }
 
   .container-2 {
@@ -226,8 +224,8 @@ footer {
   .container-3 {
     display: flex;
     width: 768px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     .box-5 {
       flex: 2;
@@ -248,98 +246,36 @@ footer {
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
 
-    .navbar-brand {
-      float: left;
-      padding: 20px;
-      color: white;
-      font-size: 30px;
-      text-decoration: none;
-    }
-
-    nav {
-      float: right;
-
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        li {
-          display: inline-block;
-          margin-left: 30px;
-          padding-top: 25px;
-          position: relative;
-
-          a {
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 18px;
-          }
-
-          a:hover {
-            color: #fff;
-          }
-
-          a:before {
-            content: '';
-            display: block;
-            height: 5px;
-            width: 100%;
-            background-color: white;
-            position: absolute;
-            top: 0;
-            width: 0;
-            transition: all ease-in-out 250ms;
-          }
-
-          a:hover::before {
-            width: 100%;
-          }
-        }
-      }
+    nav ul li {
+      margin-left: 30px;
     }
   }
 
   .grid1 {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .container-1 {
     display: flex;
-    align-items: center;
     height: 400px;
 
     div {
       flex: 1;
-      text-align: center;
     }
   }
 
   .container-2 {
     display: flex;
-    text-align: center;
 
     div {
       flex: 1;
-      padding: 20px;
-
-      p {
-        text-align: left;
-      }
     }
   }
 
   .container-3 {
     display: flex;
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
 
     .box-5 {
       flex: 2;
