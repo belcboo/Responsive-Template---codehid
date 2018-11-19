@@ -140,6 +140,69 @@ header {
     }
   }
 }
+
+footer {
+  .container-3 .row-1 {
+    background-color: $col_orange1;
+  }
+
+  .row-2 {
+    background-color: $col_orange2;
+    padding: 20px;
+    a{
+      text-decoration: none;
+      color: $col_white;
+    }
+  }
+}
+
+.container-3 {
+  margin: 0 auto;
+  color: $col_white;
+
+  .row-1 {
+    padding: 20px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        text-align: left;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .bio {
+    padding: 0 20px;
+  }
+
+  .row-1 .links {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        text-align: left;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .frame {
