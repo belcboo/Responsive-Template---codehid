@@ -67,6 +67,10 @@ header .container nav ul li a:hover::before {
   width: 100%;
 }
 
+.frame {
+  margin: 0 auto;
+}
+
 .container-1 {
   height: 400px;
   display: flex;
@@ -89,7 +93,7 @@ header .container nav ul li a:hover::before {
   text-transform: uppercase;
   transform-style: preserve-3d;
   position: relative;
-  transition: .5s;
+  transition: 0.5s;
   display: inline-block;
   white-space: pre;
 }
@@ -103,7 +107,7 @@ header .container nav ul li a:hover::before {
   padding: 15px 40px;
   background: #29b6f6;
   color: #fff;
-  transition: .25s;
+  transition: 0.25s;
   transform-origin: right;
   transform: translateX(-100%) rotateY(90deg);
 }
@@ -117,32 +121,60 @@ header .container nav ul li a:hover::before {
   padding: 15px 40px;
   background: #ff9800;
   color: #fff;
-  transition: .25s;
+  transition: 0.25s;
   transform-origin: left;
   transform: translateX(0) rotateY(0deg);
 }
 
-.container-1 .row a:hover::before {
-  transform: translateX(0) rotateY(0deg);
-}
-
-.container-1 .row a:hover::after {
-  transform: translateX(100%) rotateY(90deg);
-}
-
 .container-2 {
-  padding: 0px 10px 0px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .container-2 .feature {
-  flex: 30%;
   text-align: center;
 }
 
 .container-2 .feature i {
   color: #29b6f6;
   font-size: 3rem;
+}
+
+@media (min-width: 576px) {
+  .frame {
+    width: 576px;
+  }
+  .container-1 .row a:hover::before {
+    transform: translateX(0) rotateY(0deg);
+  }
+  .container-1 .row a:hover::after {
+    transform: translateX(100%) rotateY(90deg);
+  }
+  .container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-2 .feature {
+    flex: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .frame {
+    width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .frame {
+    width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .frame {
+    width: 1200px;
+  }
 }

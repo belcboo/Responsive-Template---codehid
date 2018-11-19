@@ -69,6 +69,10 @@ header {
   }
 }
 
+.frame {
+  margin: 0 auto;
+}
+
 .container-1 {
   height: 400px;
   display: flex;
@@ -76,9 +80,11 @@ header {
 
   .row {
     margin: auto;
+
     h1 {
       color: $col_orange1;
     }
+
     a {
       height: 60px;
       width: 200px;
@@ -87,11 +93,12 @@ header {
       text-transform: uppercase;
       transform-style: preserve-3d;
       position: relative;
-      transition: .5s;
+      transition: 0.5s;
       display: inline-block;
       white-space: pre;
     }
-    a::before{
+
+    a::before {
       content: attr(data-text);
       position: absolute;
       top: 0;
@@ -100,11 +107,12 @@ header {
       padding: 15px 40px;
       background: $col_blue;
       color: $col_white;
-      transition: .25s;
+      transition: 0.25s;
       transform-origin: right;
       transform: translateX(-100%) rotateY(90deg);
     }
-    a::after{
+
+    a::after {
       content: attr(data-text);
       position: absolute;
       top: 0;
@@ -113,31 +121,70 @@ header {
       padding: 15px 40px;
       background: $col_orange1;
       color: $col_white;
-      transition: .25s;
+      transition: 0.25s;
       transform-origin: left;
       transform: translateX(0) rotateY(0deg);
-    }
-    a:hover::before{
-      transform: translateX(0) rotateY(0deg);
-    }
-    a:hover::after{
-      transform: translateX(100%) rotateY(90deg);
     }
   }
 }
 
-.container-2{
-  padding: 0px 10px 0px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.container-2 {
+  padding: 0 10px;
 
-  .feature{
-    flex: 30%;
+  .feature {
     text-align: center;
-    i{
+
+    i {
       color: $col_blue;
       font-size: 3rem;
     }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .frame {
+    width: 576px;
+  }
+  //Enabling animation for resolutions 576px and above.
+  .container-1 {
+    .row {
+      a:hover::before {
+        transform: translateX(0) rotateY(0deg);
+      }
+
+      a:hover::after {
+        transform: translateX(100%) rotateY(90deg);
+      }
+    }
+  }
+
+  .container-2 {
+    display: flex;
+    justify-content: space-between;
+
+    .feature {
+      flex: 30%;
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .container,
+  .frame {
+    width: 768px;
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .container,
+  .frame {
+    width: 992px;
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container,
+  .frame {
+    width: 1200px;
   }
 }
