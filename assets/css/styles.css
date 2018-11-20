@@ -139,16 +139,16 @@ header .container nav ul li a:hover::before {
   font-size: 3rem;
 }
 
-footer .container-3 .row-1 {
+footer .container-3 {
   background-color: #ff9800;
 }
 
-footer .row-2 {
+footer .container-4 {
   background-color: #ee8f04;
   padding: 20px;
 }
 
-footer .row-2 a {
+footer .container-4 a {
   text-decoration: none;
   color: #fff;
 }
@@ -159,7 +159,7 @@ footer .row-2 a {
 }
 
 .container-3 .row-1 {
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 .container-3 .row-1 ul {
@@ -218,6 +218,15 @@ footer .row-2 a {
   .container-2 .feature {
     flex: 30%;
   }
+  .row-1 {
+    display: flex;
+  }
+  .row-1 .bio {
+    flex: 2;
+  }
+  .row-1 .links {
+    flex: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -225,18 +234,28 @@ footer .row-2 a {
   .frame {
     width: 768px;
   }
+  .row-1,
+  .row-2 {
+    width: 768px;
+    margin: auto;
+    padding: 0;
+  }
 }
 
 @media (min-width: 992px) {
   .container,
-  .frame {
+  .frame,
+  .row-1,
+  .row-2 {
     width: 992px;
   }
 }
 
 @media (min-width: 1200px) {
   .container,
-  .frame {
+  .frame,
+  .row-1,
+  .row-2 {
     width: 1200px;
   }
 }

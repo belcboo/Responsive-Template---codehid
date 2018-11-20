@@ -142,14 +142,15 @@ header {
 }
 
 footer {
-  .container-3 .row-1 {
+  .container-3 {
     background-color: $col_orange1;
   }
 
-  .row-2 {
+  .container-4 {
     background-color: $col_orange2;
     padding: 20px;
-    a{
+
+    a {
       text-decoration: none;
       color: $col_white;
     }
@@ -161,7 +162,7 @@ footer {
   color: $col_white;
 
   .row-1 {
-    padding: 20px;
+    padding: 20px 10px;
 
     ul {
       margin: 0;
@@ -229,6 +230,18 @@ footer {
       flex: 30%;
     }
   }
+
+  .row-1 {
+    display: flex;
+
+    .bio {
+      flex: 2;
+    }
+
+    .links {
+      flex: 1;
+    }
+  }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -236,18 +249,29 @@ footer {
   .frame {
     width: 768px;
   }
+
+  .row-1,
+  .row-2 {
+    width: 768px;
+    margin: auto;
+    padding: 0;
+  }
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .container,
-  .frame {
+  .frame,
+  .row-1,
+  .row-2 {
     width: 992px;
   }
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .container,
-  .frame {
+  .frame,
+  .row-1,
+  .row-2 {
     width: 1200px;
   }
 }
